@@ -2,56 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
-    <title>Video</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <title>Video</title>
 </head>
 
 <body class="main_container">
-    
-    <div class="container  main_video">
-        <select name="" id="" class="cont__list"></select>
-        <button class="cont__button"></button>
-        <button class="cont__button"></button>
-        <img src="" alt="" class="cont__video" id="video1">
-    </div>
-    
-    <div class="container  color_video">
-        <img src="" alt="" class="cont__video" id="video2">
-        <form class="container__form  form_range">
-            <input type="range" min="1" max="10000" value="50000" class="">
-            <input type="number">
-        </form>
-        <form class="container__form  form_typing">
-            <input type="text">
-            <label for="">Color:</label>
-        </form>
-    </div>
-    
-    <div class="container  tools_cont">
-        <label for="">HSV min</label>
-        <form action="" class="container__form  manual_parameters">
-            <label for="">H</label>
-            <input type="range" min="1" max="179" value="0" type="text">
-            <label for="">S</label>
-            <input type="range" min="1" max="255" value="0" type="text">
-            <label for="">V</label>
-            <input type="range" min="1" max="255" value="0" type="text">
-        </form>
-        <label for="">HSV max</label>
-        <form action="" class="container__form  manual_parameters">
-            <label for="">H</label>
-            <input type="range" min="1" max="179" value="179" type="text">
-            <label for="">S</label>
-            <input type="range" min="1" max="255" value="255" type="text">
-            <label for="">V</label>
-            <input type="range" min="1" max="255" value="255" type="text">
-        </form>
-        </form>
-    </div>
+
+  <div class="container  main_video">
+    <form action="" class="container__form  main_buttons">
+      <!-- <select name="" id="" class="cont__list">Cámaras</select> -->
+      <button class="cont__button">start</button>
+      <button class="cont__button">stop</button>
+  </form>
+  <img src="" alt="" class="cont__video" id="video1">
+  </div>
+
+  <div class="container  color_video">
+    <img src="" alt="" class="cont__video" id="video2">
+    <form class="container__form  form_range">
+      <input type="range" min="1" max="10000" value="5000">
+      <input min="1" max="10000" value="5000" class="input_text" maxlength="5">
+    </form>
+    <form class="container__form  form_typing">
+      <input type="text" placeholder="Escribe un color" class="input_text">
+      <p>Color:</p>
+    </form>
+  </div>
+
+  <div class="container  tools_cont">
+    <p>HSV min</p>
+    <form action="" class="container__form  manual_parameters">
+      <p>H</p>
+      <input type="range" min="0" max="179" value="0" class="slider  slider--H" id="min_H">
+      <input value="0" class="spin" id="" maxlength="3">
+      <p>S</p>
+      <input type="range" min="0" max="255" value="0" class="slider" id="min_S">
+      <input value="0" class="spin" id="" maxlength="3">
+      <p>V</p>
+      <input type="range" min="0" max="255" value="0" class="slider" id="min_V">
+      <input value="0" class="spin" id="" maxlength="3">
+      <label id="color_min_HSV"></label>
+    </form>
+    <p>HSV max</p>
+    <form action="" class="container__form  manual_parameters">
+      <p>H</p>
+      <input type="range" min="0" max="179" value="179" class="slider  slider--H" id="max_H">
+      <input value="179" class="spin" id="" maxlength="3">
+      <p>S</p>
+      <input type="range" min="0" max="255" value="255" class="slider" id="max_S">
+      <input value="179" class="spin" id="" maxlength="3">
+      <p>V</p>
+      <input type="range" min="0" max="255" value="255" class="slider" id="max_V">
+      <input value="179" class="spin" id="" maxlength="3">
+      <label id="color_max_HSV"></label>
+    </form>
+    </form>
+  </div>
 
 </body>
+
+<footer>
+
+</footer>
 
 </html>
