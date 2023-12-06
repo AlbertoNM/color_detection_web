@@ -1,0 +1,66 @@
+
+/*! Standar things */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/*! widgets */
+
+
+
+/*! Container styles */
+
+.main_container {
+    margin: 10% 10%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__form {
+    margin: 1.5rem;
+}
+
+.form_range{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.form_typing{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: left;
+}
+
+.manual_parameters {  
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.5rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". ."
+      ;
+}
+  

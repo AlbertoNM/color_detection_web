@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
     <title>Video</title>
 </head>
-<body>
-    <h1>Video</h1>
-    <img src="{{ url_for('video_feed') }}" alt="">
+
+<body class="main_container">
+    
+    <div class="container  main_video">
+        <select name="" id="" class="cont__list"></select>
+        <button class="cont__button"></button>
+        <button class="cont__button"></button>
+        <img src="" alt="" class="cont__video" id="video1">
+    </div>
+    
+    <div class="container  color_video">
+        <img src="" alt="" class="cont__video" id="video2">
+        <form class="container__form  form_range">
+            <input type="range" min="1" max="10000" value="50000" class="">
+            <input type="number">
+        </form>
+        <form class="container__form  form_typing">
+            <input type="text">
+            <label for="">Color:</label>
+        </form>
+    </div>
+    
+    <div class="container  tools_cont">
+        <label for="">HSV min</label>
+        <form action="" class="container__form  manual_parameters">
+            <label for="">H</label>
+            <input type="range" min="1" max="179" value="0" type="text">
+            <label for="">S</label>
+            <input type="range" min="1" max="255" value="0" type="text">
+            <label for="">V</label>
+            <input type="range" min="1" max="255" value="0" type="text">
+        </form>
+        <label for="">HSV max</label>
+        <form action="" class="container__form  manual_parameters">
+            <label for="">H</label>
+            <input type="range" min="1" max="179" value="179" type="text">
+            <label for="">S</label>
+            <input type="range" min="1" max="255" value="255" type="text">
+            <label for="">V</label>
+            <input type="range" min="1" max="255" value="255" type="text">
+        </form>
+        </form>
+    </div>
+
 </body>
+
 </html>
