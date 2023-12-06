@@ -17,17 +17,17 @@
       <button class="cont__button">start</button>
       <button class="cont__button">stop</button>
   </form>
-  <img src="" alt="" class="cont__video" id="video1">
+  <img src="{{ url_for('video_feed') }}" class="cont__video" id="video1">
   </div>
 
   <div class="container  color_video">
-    <img src="" alt="" class="cont__video" id="video2">
+    <img src="" lass="cont__video" id="video2">
     <form class="container__form  form_range">
       <input type="range" min="1" max="10000" value="5000">
       <input min="1" max="10000" value="5000" class="input_text" maxlength="5">
     </form>
     <form class="container__form  form_typing">
-      <input type="text" placeholder="Escribe un color" class="input_text">
+      <input type="text" name="color" placeholder="Escribe un color" class="input_text">
       <p>Color:</p>
     </form>
   </div>
